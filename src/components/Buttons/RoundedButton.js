@@ -2,12 +2,22 @@ import { View, Text, TouchableOpacity } from "react-native";
 
 import styles from "./styles";
 
-export default ({ title, buttonStyle, textStyle, leftIcon, rightIcon }) => {
+export default ({
+  title,
+  buttonStyle,
+  textStyle,
+  leftIcon,
+  rightIcon,
+  handlePress,
+}) => {
   return (
     <TouchableOpacity
       style={{
         ...styles.buttonStyle,
         ...buttonStyle,
+      }}
+      onPress={() => {
+        if (handlePress) handlePress();
       }}
     >
       {leftIcon && <View style={styles.leftIconViewStyle}>{leftIcon}</View>}

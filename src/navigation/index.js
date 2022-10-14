@@ -5,37 +5,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import Constants from "expo-constants";
 import { MenuScreen } from "../screens/Menu";
+import { RewardsScreen } from "../screens/Rewards";
+import { ScanScreen } from "../screens/Scan";
+import { AccountScreen } from "../screens/Account";
+import { MyOrderScreen } from "../screens/MyOrder";
 
 const Tab = createBottomTabNavigator();
-
-function RewardsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Rewards!</Text>
-    </View>
-  );
-}
-function ScanScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Scan!</Text>
-    </View>
-  );
-}
-function AccountScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Account!</Text>
-    </View>
-  );
-}
-function MyOrderScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>My Order!</Text>
-    </View>
-  );
-}
 
 export default () => {
   return (
